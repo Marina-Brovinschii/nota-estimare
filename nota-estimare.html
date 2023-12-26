@@ -1,0 +1,28 @@
+<script>
+    grade = parseInt(prompt("Introduceti nota dvs va rog: "))
+
+    DIAPASON_1 = 4
+    DIAPASON_2 = [5, 6]
+    DIAPASON_3 = [7, 8]
+    DIAPASON_4 = 9
+    DIAPASON_5 = 10
+
+    code_1 = "EXCELLENT!"
+    code_2 = "GOOD!"
+    code_3 = "OK!"
+    code_4 = "BAD!"
+    code_5 = "VERY BAD!"
+
+    if (grade === DIAPASON_5) {
+        alert(code_1)
+    } else if (grade === DIAPASON_4) {
+        alert(code_2)
+    } else if (grade >= DIAPASON_3[0] && grade <= DIAPASON_3[1]) {
+        alert(code_3)
+    } else if(grade >= DIAPASON_2[0] && grade <= DIAPASON_2[1]) {
+        alert(code_4)
+    } else if(grade <= DIAPASON_1) {
+        alert(code_5)
+    }
+
+</script>
